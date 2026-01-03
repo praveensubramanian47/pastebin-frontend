@@ -1,0 +1,94 @@
+.view-paste-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.paste-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.paste-header h1 {
+  color: #333;
+  font-size: 2rem;
+}
+
+.btn-home {
+  padding: 10px 20px;
+  background: #198754;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.paste-info {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.info-badge {
+  background: #f0f7ff;
+  color: #667eea;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.paste-content {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-left: 4px solid #198754;
+}
+
+.paste-content pre {
+  margin: 0;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-family: 'Courier New', monospace;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.error-box {
+  text-align: center;
+  background: white;
+  padding: 60px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.error-box h1 {
+  font-size: 4rem;
+  color: #c62828;
+  margin-bottom: 20px;
+}
+
+.error-box p {
+  color: #666;
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.loading {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+@media (max-width: 768px) {
+  .paste-header {
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+  }
+}
